@@ -43,7 +43,7 @@ export class ReservationService {
 
   makeReservation(data: ReservationData) {
     const headers = this.getHeaders();
-    this.http.post('http://localhost:3000/reservations', { ...data, service: this.selection?.service.optionName, title: this.selection?.serviceOption.optionName }, { headers }).subscribe();
+    this.http.post('http://localhost:3000/reservations', { ...data, service: this.selection?.service.optionName, title: this.selection?.serviceOption.optionName }).subscribe();
   }
 
   getHeaders() {
