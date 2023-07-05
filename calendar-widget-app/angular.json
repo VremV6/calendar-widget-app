@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/calendar-widget-app",
+            "outputPath": "docs/calendar-widget-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -34,6 +34,7 @@
               "./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css",
               "src/styles.scss"
             ],
+            "baseHref": "/calendar-widget-app/",
             "scripts": []
           },
           "configurations": {
